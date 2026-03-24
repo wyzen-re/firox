@@ -397,17 +397,7 @@
     </div>
   </div>
 
-  <!-- Newsletter -->
-  <section class="newsletter">
-    <div class="container">
-      <h2>Join the FIROX Family</h2>
-      <p>Get exclusive offers and early access to new drops</p>
-      <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
-        <input type="email" placeholder="Enter your email" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-  </section>
+
 
   <!-- Product Modal -->
   <div class="modal" id="productModal">
@@ -815,7 +805,7 @@
     }
 
     function submitContact(e) { e.preventDefault(); showToast('Message sent!', 'success'); e.target.reset(); }
-    function subscribeNewsletter(e) { e.preventDefault(); showToast('Thanks for subscribing!', 'success'); e.target.reset(); }
+
     function closeModal(id) { document.getElementById(id).classList.remove('active'); }
     function showAuthModal() { document.getElementById('authModal').classList.add('active'); }
 
